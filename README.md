@@ -11,7 +11,11 @@ It shows the last situation of coins from
 
 ## Usage
 
-Just run `python lastCoin.py`
+For single result :  
+- `python lastCoin.py`  
+
+For infinite result :   
+- `python lastCoin.py -t infinite`  
 
 ## Advanced Usage
 
