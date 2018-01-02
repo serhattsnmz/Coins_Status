@@ -15,9 +15,9 @@ class LastCoinApi:
 
     def clear(self):
         try:
-            os.system("cls")
-        except:
             os.system("clear")
+        except:
+            os.system("cls")
 
     def binance_create_request(self, symbol):
         req = requests.get(self.binanceUrl + symbol)
