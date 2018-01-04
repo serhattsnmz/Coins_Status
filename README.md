@@ -6,7 +6,7 @@ It shows the last situation of coins from
 
 ## Requirements
 
-- Python 3
+- Python 3.6
 - Install `requirements.txt`
 
 ## Usage
