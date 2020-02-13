@@ -3,6 +3,7 @@ import requests
 import json
 import os
 import argparse
+import platform
 
 class LastCoinApi:
     def __init__(self):
@@ -15,9 +16,12 @@ class LastCoinApi:
 
     def clear(self):
         try:
-            os.system("clear")
+            if platform.system() == "Windows":
+                os.system("cls")
+            else:
+                os.system("clear")
         except:
-            os.system("cls")
+            pass
 
     def binance_create_request(self, symbol):
         req = requests.get(self.binanceUrl + symbol)
